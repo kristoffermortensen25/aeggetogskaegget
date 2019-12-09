@@ -1,10 +1,12 @@
-
 #logo {
-width: 50px;
+    width: 50px;
+
 }
+
 body {
-  background-color: #d5e9ff;
+    background-color: #d5e9ff;
 }
+
 /*Her har vi lånt noget kode fra: https://www.jqueryscript.net/menu/Basic-Hamburger-Navigation-Menu-jQuery-CSS.html*/
 
 .wrapper {
@@ -14,6 +16,7 @@ body {
     max-width: 960px;
 
     margin: 0 auto;
+
 
 }
 
@@ -31,6 +34,23 @@ body {
 
     cursor: pointer;
 
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+
+}
+
+.menu-toggle {
+
+    height: 20px;
+    width: 20px;
+    background-color: #439d5a;
+    border-radius: 50%;
+
+
 }
 
 
@@ -45,7 +65,7 @@ body {
 
     display: block;
 
-    background: #c9565a;
+    background: #d5e9ff;
 
     height: 3px;
 
@@ -56,6 +76,7 @@ body {
     -webkit-transition: all ease-in-out 350ms;
 
     transition: all ease-in-out 350ms;
+
 
 }
 
@@ -117,6 +138,7 @@ nav {
 
     padding: 0;
 
+
 }
 
 
@@ -143,7 +165,8 @@ nav ul {
 
     width: 97%;
 
-    margin-top: 15%;
+    margin-top: 4%;
+
 
 }
 
@@ -161,7 +184,7 @@ nav ul.opening {
 
 nav li {
 
-    border-bottom: 1px solid #0f3c5a;
+    border-bottom: black;
 
 }
 
@@ -174,34 +197,11 @@ nav li:last-child {
 }
 
 
-
-nav a {
-
-    color: #0f3c5a;
-
-    background: rgba(255, 255, 255, 0.97);
-
-    display: block;
-
-    padding: 1.5em 4em 1.5em 3em;
-
-    text-transform: uppercase;
-
-    text-decoration: none;
-
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-
-    border-radius:5px;
-
-}
-
-
-
 nav a:hover,
 
 nav a:focus {
 
-    background: #c9565a;
+    color: #f8b376;
 
 }
 
@@ -222,8 +222,30 @@ nav a:focus {
 }
 
 
+@media only screen and (max-width: 400px) {
+   
+    nav a {
 
-@media (min-width: 780px) {
+    color: whitesmoke;
+
+    background: #439d5a;
+
+    display: block;
+
+    padding: 1.5em 4em 1.5em 3em;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+
+    border-radius: 5px;
+
+}
+    
+}
+@media only screen and (min-width: 780px) {
 
 
 
@@ -232,30 +254,34 @@ nav a:focus {
         display: none;
 
     }
+    
+    
+    .hamburger {
 
+        display: none;
 
-
-
-
-
+    }
 
     nav ul {
 
         display: flex;
-
         flex-direction: row;
-
         justify-content: flex-end;
+        width: 50%;
+        margin-left: 350px;
+        margin-top: -50px;
 
     }
 
+    nav {
+        
+        color: none;
+    }
 
 
     nav li {
 
         flex: 1 1 auto;
-
-        border: none;
 
     }
 
@@ -269,8 +295,6 @@ nav a:focus {
 
         border: none;
 
-        background-color: #c9565a;
-
     }
 
 
@@ -279,29 +303,9 @@ nav a:focus {
 
     nav a:focus {
 
-        background-color: rgba(255, 255, 255, .10);
+        color: #f8b376;
 
     }
-
-
-
-
-
-
-
-    .logo {
-
-        flex: 0 0 200px;
-
-        margin: 0;
-
-        padding-left: 20px;
-
-    }
-
-
-
-
 
     nav {
 
@@ -311,14 +315,28 @@ nav a:focus {
 
         justify-content: space-between;
 
-
-
         text-align: center;
-
-        background-color: #c9565a;
-
+        
     }
 
 
+    nav a {
+
+        color: whitesmoke;
+
+        display: flex;
+
+        padding: 1.5em 4em 1.5em 3em;
+
+        text-transform: uppercase;
+
+        text-decoration: none;
+        
+
+
+    }
+
+    
+}
 
 /*Her slutter noget af den kode vi har lånt fra: https://www.jqueryscript.net/menu/Basic-Hamburger-Navigation-Menu-jQuery-CSS.html*/
